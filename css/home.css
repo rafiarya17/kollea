@@ -1,0 +1,350 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.wrapper {
+  width: 1440px;
+  height: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position:fixed;
+  margin-top: 75px;
+  margin-left: 20px;
+  height: 700px;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  border: 2px solid #0E5BAD;
+  border-radius: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+#sidebarMenu {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+/* .sidebar-item {
+  margin: 10px auto;
+} */
+
+.nav-link:hover {
+  color: #0E5BAD;
+}
+
+.profile {
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  background-color: #0E5BAD;
+  color: white;
+}
+
+.photo-profile {
+  margin-top: 23px;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  text-align: center;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.search-bar {
+  border: 1px solid #cccccc;
+  border-radius: 37px;
+  overflow: hidden;
+
+}
+
+
+::placeholder { 
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.search-icon {
+  border-left:1px solid #cccccc ;
+}
+
+/* Container Main */
+
+.user-post {
+  border: 2px solid #0E5BAD;
+  border-radius: 7px;
+}
+
+.post-btn {
+  background-color: #3575CA;
+  color: white;
+}
+
+.post-btn:hover {
+  background-color: white;
+  color: #0E5BAD;
+}
+
+/* .likes, {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.likes:hover {
+  color: #0E5BAD;
+}
+
+.comment {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.comment:hover {
+  color: #0E5BAD;
+}
+
+.share {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.share:hover {
+  color: #0E5BAD;
+} */
+
+.icon-button {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.icon-button:hover {
+  color: #0E5BAD;
+}
+
+
+/* Right Sidebar */
+
+.upcoming-event {
+  position:fixed;
+  margin-top: 75px;
+  margin-left: 80%;
+  height: 396px;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 20px 0 0; /* Height of navbar */
+  border: 2px solid #0E5BAD;
+  border-radius: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .upcoming-event {
+    top: 5rem;
+    position: relative;
+    margin-left: 0;
+  }
+}
+
+.upcoming-event-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.upcoming-event .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.upcoming-event .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.upcoming-event .nav-link.active {
+  color: #2470dc;
+}
+
+.upcoming-event .nav-link:hover .feather,
+.upcoming-event .nav-link.active .feather {
+  color: inherit;
+}
+
+.upcoming-event-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.trending-header {
+  text-decoration: none;
+  color: black;
+}
+
+/* Calendar */
+
+.calendar {
+  position:fixed;
+  margin-top: 492px;
+  margin-left: 80%;
+  height: 337px;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 20px 0 0; /* Height of navbar */
+  border: 2px solid #0E5BAD;
+  border-radius: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .calendar {
+    top: 5rem;
+    position: relative;
+    margin-left: 0;
+  }
+}
+
+.calendar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.calendar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.calendar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.calendar .nav-link.active {
+  color: #2470dc;
+}
+
+.calendar .nav-link:hover .feather,
+.calendar .nav-link.active .feather {
+  color: inherit;
+}
+
+.calendar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.trending-header {
+  text-decoration: none;
+  color: black;
+}
+
+/* Calendar */
+
+.table tr {
+  text-align: center;
+}

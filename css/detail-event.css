@@ -1,0 +1,351 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F5F5F5;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.wrapper {
+  width: 1440px;
+  height: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position:fixed;
+  margin-top: 75px;
+  margin-left: 20px;
+  height: 700px;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  border: 2px solid #0E5BAD;
+  border-radius: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+    margin-top: 65px;
+    margin-left: 0px;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #0E5BAD;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #0E5BAD;
+  font-weight: 900;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.heading {
+  color: #0E5BAD;
+  font-weight: bold;
+}
+
+#sidebarMenu {
+  font-size: 1.5rem;
+  padding: 0;
+  background-color: white;
+}
+
+.sidebar-item {
+  margin: 3px auto;
+}
+
+.nav-link:hover {
+  color: #0E5BAD;
+}
+
+.profile {
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  background-color: #0E5BAD;
+  color: white;
+}
+
+.photo-profile {
+  margin-top: 23px;
+}
+
+/*
+ * Navbar
+ */
+
+ .navbar {
+  background-color: #f5f5f5;
+}
+
+.navbar-brand {
+  text-align: center;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.search-bar {
+  border: 2px solid #0E5BAD;
+  border-radius: 37px;
+  overflow: hidden;
+
+}
+
+
+::placeholder { 
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.search-icon {
+  border-left:1px solid #cccccc ;
+}
+
+/* Container Main */
+
+.user-post {
+  border: 2px solid #0E5BAD;
+  border-radius: 7px;
+}
+
+.post-btn {
+  background-color: #3575CA;
+  color: white;
+}
+
+.post-btn:hover {
+  background-color: white;
+  color: #0E5BAD;
+}
+
+/* .likes {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.likes:hover {
+  color: #0E5BAD;
+}
+
+.comment {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.comment:hover {
+  color: #0E5BAD;
+}
+
+.share {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.share:hover {
+  color: #0E5BAD;
+} */
+
+.content {
+  margin-left: 20.75%
+}
+@media screen and (max-width: 767.98px) {
+  .content {
+    margin-left: 0%
+  }
+  .cover {
+    background-image: url("/assets/img/event-cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+}
+
+.edit-icon {
+  color: black;
+}
+
+.edit-icon:hover {
+  color: #0E5BAD;
+}
+
+.sub-title {
+  margin-bottom: 0;
+}
+
+
+
+.cover {
+  background-image: url("/assets/img/event-cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -260px;
+  height: 400px;
+}
+
+.cover-edit {
+  font-size: 1.875rem;
+  background-color: #727272;
+  border-radius: 50px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  margin-top: 4%;
+  padding-top: 7px;
+}
+
+.edit-btn {
+  background-color: #3575CA;
+  color: white;
+  height: 20%;
+  border: 2px solid black;
+  width: 120px;
+}
+
+.edit-btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.sub-btn {
+  background-color: white;
+  color: black;
+  height: 20%;
+  border: 2px solid black;
+  width: 68px;
+}
+
+.sub-btn:hover {
+  background-color: #0E5BAD;
+  color: white;
+  border: 2px solid black;
+}
+
+.icon-button {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.icon-button:hover {
+  color: #0E5BAD;
+}
+
+.event-title {
+  font-size: 3rem;
+}
+
+.event-tag {
+  display: flex;
+
+}
+
+.event-item {
+  background-color: #FFF3A6;
+  border-radius: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.daftar-btn {
+  background-color: #3575CA;
+  color: white;
+  height: 20%;
+  border: 2px solid black;
+  border-radius: 100px;
+  width: 150px;
+}
+
+.daftar-btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.header {
+  background-color: #F5F5F5;
+}
+
+.navbar .form-control {
+  background-color: #F5F5F5;
+}
+
+.searchbar-icon {
+  color: #0E5BAD;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0E5BAD;
+  opacity: 1; /* Firefox */
+}
+
+

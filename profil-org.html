@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Kollea | Profile</title>
+  <link rel="shortcut icon" type="image" href="assets/img/kollea_logo.ico" />
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/profil.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar navbar-light sticky-top flex-md-nowrap p-0">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 ps-5" href="index.html"> <img src="assets/img/kollea-navbar.svg" alt=""
+        style="width: 150px;"></a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid">
+      <h2 class="d-flex mx-auto justify-content-center col-6 heading">Profil</h2>
+      <form class="d-flex justify-content-center col-md-3 search-bar">
+        <input class="form-control me-2" type="text" placeholder="Telusuri" aria-label="Search">
+        <button class="btn searchbar-icon" type="submit"><i class="fas fa-search"></i></button>
+        <button class="btn searchbar-icon" type="submit"><i class="fas fa-filter"></i></button>
+      </form>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item profile">
+              <img class="photo-profile" src="assets/img/photo-profile.svg" alt="Photo">
+              <h2>Han so Hee</h2>
+            </li>
+            <li class="nav-item sidebar-item me-auto ms-5 pt-4">
+              <a class="nav-link " aria-current="page" href="home.html">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav-item sidebar-item me-auto ms-5 pt-4">
+              <a class="nav-link active" href="profil-user.html">
+                <i class="far fa-user-circle"></i>
+                Profil
+              </a>
+            </li>
+            <li class="nav-item sidebar-item me-auto ms-5 pt-4">
+              <a class="nav-link" href="notifikasi.html">
+                <i class="far fa-bell"></i>
+                Notifikasi
+              </a>
+            </li>
+            <li class="nav-item sidebar-item me-auto ms-5 pt-4">
+              <a class="nav-link" href="chat.html">
+                <i class="far fa-comment-dots"></i>
+                Chat
+              </a>
+            </li>
+            <li class="nav-item sidebar-item me-auto ms-5 pt-4">
+              <a class="nav-link" href="find.html">
+                <i class="fas fa-search"></i>
+                Find
+              </a>
+            </li>
+            <li class="nav-item sidebar-item me-auto ms-5 pt-4">
+              <a class="nav-link" href="network.html">
+                <i class="fas fa-user-friends"></i>
+                My Network
+              </a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container-fluid col-md-9 content">
+    <div class="row">
+      <div class="col">
+        <div class="my-3 p-0 bg-body user-post">
+          <div class="d-flex d-flex justify-content-end cover">
+          </div>
+          
+          <div class="d-flex justify-content-between mt-3 mb-3 pe-5">
+            <img class="ps-2 mt-3" src="assets/img/brawijaya-logo.svg" alt="Photo" width="200px">
+          </div>
+          <div class="mt-3 mb-3 pe-3">
+            <h4 class="ps-4">Universitas Brawijaya</h4>
+            <div class="px-4">
+              <div class="small">Join UB be the best!</div>
+              <div class="small">Malang, Indonesia</div>
+              <div class="small">Muhammad Reyhan Jackky, Saipul Baharuddin, and 8 others followed</div>
+              <button class="btn btn-primary mt-3 edit-btn" type="button">Follow <i
+                  class="fas fa-plus ms-2"></i></button>
+              <button class="btn btn-primary mt-3 ms-2 sub-btn" type="button">More</button>
+              <div class="d-flex justify-content-evenly border-top mt-3 pt-3">
+                <h4 class="active-tab">Home</h4>
+                <h4 class="text-muted">About</h4>
+                <h4 class="text-muted">Post</h4>
+                <h4 class="text-muted">Events</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-3 p-3 bg-body user-post">
+          <div class="d-flex justify-content-between mt-3 mb-3">
+            <h4>Introduction</h4>
+          </div>
+          <p class="pb-3 pt-3">Universitas Brawijaya (UB) was established by the President of the Republic of Indonesia
+            through a wire no. 258/K/61 sent on July 11, 1961. The Brawijaya name derived from the title of the King of
+            Majapahit, a great kingdom in Indonesia from 12th to 15th century. Later, UB transformed into a state
+            university on January 5, 1963, following a Presidential Decree issued earlier in the same year.
+            Today UB is one of the leading universities in Indonesia with more than 60.000 students in various
+            vocational, bachelor, master, doctoral, professional, and medical specialist programs.
+          </p>
+          <a class="icon-button" href="">
+            <h6 class="d-flex justify-content-center border-top pt-3 icon-button" style="font-size: 1rem;">Lihat semua
+            </h6>
+          </a>
+        </div>
+        <div class="my-3 p-3 bg-body user-post">
+          <div class="d-flex justify-content-between mt-3 mb-3">
+            <h4>Post</h4>
+          </div>
+          <div class="d-flex justify-content-between mt-3 mb-3">
+            <div class="my-3 p-3 me-3 bg-body user-post">
+              <div class="d-flex pt-3 pb-3">
+                <img class="user-profile" src="assets/img/brawijaya-logo.svg" alt="Photo" width="50px" height="50px">
+                <div class="media-body mx-3">
+                  <h6>Universitas Brawijaya</h6>
+                  <div class="text-muted small">3h</div>
+                </div>
+              </div>
+              <p>Selamat Hari Pahlawan Nasional Pahlawanku Inspirasiku!
+                Mimin mau tahu donk, siapa sih, pahlawan dalam kehidupan
+                #TemanUB? Dan apa alasannya? Berikan apresiasi terbaik di kolom komentar ya!</p>
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/konten-1.svg" alt="" width="400px">
+              </div>
+              <small class="d-flex justify-content-evenly pt-3">
+                <a class="icon-button" href="#"><i class="fas fa-thumbs-up"></i> 176</a>
+                <a class="icon-button" href="#"><i class="fas fa-comment"></i> 81</a>
+                <a class="icon-button" href="#"><i class="fas fa-share-alt"></i> 22</a>
+              </small>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between mt-3 mb-3">
+            <div class="my-3 p-3 me-3 bg-body user-post">
+              <div class="d-flex pt-3 pb-3">
+                <img class="user-profile" src="assets/img/brawijaya-logo.svg" alt="Photo" width="50px" height="50px">
+                <div class="media-body mx-3">
+                  <h6>Universitas Brawijaya</h6>
+                  <div class="text-muted small">3h</div>
+                </div>
+              </div>
+              <p>Selamat pagi! <br>
+
+                Selamat kepada para #TemanUB yang dilantik sebagai wisudawan/wisudawati pagi ini. Berikut adalah wisudawan terbaik
+                dari masing-masing program studi. Mari ucapkan selamat kepada pada wisudawan/wisudawati</p>
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/konten-2.svg" alt="" width="400px">
+              </div>
+              <small class="d-flex justify-content-evenly pt-3">
+                <a class="icon-button" href="#"><i class="fas fa-thumbs-up"></i> 176</a>
+                <a class="icon-button" href="#"><i class="fas fa-comment"></i> 81</a>
+                <a class="icon-button" href="#"><i class="fas fa-share-alt"></i> 22</a>
+              </small>
+            </div>
+          </div>
+
+          <a class="icon-button" href="">
+            <h6 class="d-flex justify-content-center border-top pt-3" style="font-size: 1rem;">Lihat semua</h6>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </main>
+
+
+
+
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+    integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+    integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
+  </script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
